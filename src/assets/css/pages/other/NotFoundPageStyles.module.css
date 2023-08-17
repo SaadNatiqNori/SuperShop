@@ -1,0 +1,14 @@
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 30px;
+  font-weight: bolder;
+  flex-direction: column;
+}
+.h1 small {
+  font-size: 12px;
+  cursor: pointer;
+}

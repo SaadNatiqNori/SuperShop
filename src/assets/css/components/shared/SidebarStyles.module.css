@@ -1,0 +1,61 @@
+.sidebar {
+  padding: 10px;
+}
+/* Sidebar Header Start */
+.sidebar .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-height: 80px;
+  margin-bottom: 10px;
+}
+.sidebar .head img {
+  cursor: pointer;
+  background-color: #b6d8c887;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+/* Sidebar Content Start */
+.sidebar .content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.sidebar .content a {
+  text-decoration: none;
+}
+.sidebar .content a li {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 45px;
+  background-color: #b6d8c887;
+  color: #1ab96d;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+.sidebar .content a li p {
+  animation: fade-in 0.5s;
+}
+/* Change the link color on hover */
+.sidebar .content li:hover {
+  background-color: #99d7ba87;
+  cursor: pointer;
+}
+
+/* Fade In Animation Effect */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

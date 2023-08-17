@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  max-height: 80px;
+}
+.navbar .filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+.navbar .filter select {
+  padding: 5px 15px;
+  border: 2px solid #1ab96d;
+  border-radius: 3px;
+  color: #1ab96d;
+  background-color: white;
+  font-size: 16px;
+  height: 48px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navbar .filter .addNewProduct {
+  padding: 5px 15px;
+  border: none;
+  border-radius: 3px;
+  background: #1ab96d;
+  color: white;
+  font-size: 16px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar .filter .addNewProduct span {
+  font-size: 31px;
+  font-weight: bolder;
+  vertical-align: middle;
+}

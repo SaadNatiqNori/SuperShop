@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+  width: 353px;
+  height: 348px;
+  max-width: 370px;
+  min-width: 324px;
+  border-radius: 12px;
+  border: 2px solid #d5d3d3;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px;
+  background-color: #cdcacaad;
+}
+.card .cardImage {
+  width: 100%;
+  height: 215px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #a5a5a5;
+}
+.card .cardTitleAndPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 15px 10px;
+}
+.card .cardTitleAndPrice p {
+  font-size: 17px;
+}
+.card .cardDescription {
+  padding: 0px 10px;
+}

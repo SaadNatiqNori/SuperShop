@@ -1,0 +1,93 @@
+.modal {
+  position: relative;
+}
+/* Modal BackDrop Start */
+.modal .backdrop {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000057;
+  z-index: 2;
+  animation: fade-in 0.5s;
+}
+/* Modal Content & Parent Start */
+.modal .modalParent {
+  position: relative;
+  padding: 25px;
+}
+.modal .modalParent .closeModal {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.modal .modalContent {
+  width: 80%;
+  height: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 4;
+  animation: fade-in 0.5s;
+}
+/* Modal Header Start */
+.modal .modalContent .modalHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 60px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+/* Modal Body Start */
+.modal .modalContent .modalBody {
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+.modal .modalContent .modalBody .productImage {
+  width: 50%;
+}
+.modal .modalContent .modalBody .productImage img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 512px;
+  height: 432px;
+  object-fit: contain;
+  max-width: 512px;
+  max-height: 432px;
+}
+.modal .modalContent .modalBody .productInfo {
+  width: 50%;
+}
+.modal .modalContent .modalBody .productInfo .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.modal .modalContent .modalBody .productInfo .info h2 {
+  font-weight: 900;
+}
+/* Fade In Animation Effect */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
